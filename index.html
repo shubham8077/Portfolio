@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="tailwind.js"></script>
+    <style>
+        .about {
+            font-size: 5vw;
+            background-image: url('wl.webp');
+            font-weight: bold;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: mv 3s linear infinite;
+        }
+
+        @keyframes mv {
+            0% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 100% 0%;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url('mybg.webp'); background-size: cover;">
+    <div class="nav w-fit mx-auto bg-zinc-800 rounded-full p-2">
+
+        <a href="index.html" class="text-lg text-white font-bold hover:text-orange-400">About</a>
+        <a href="skills.html" class="text-lg ml-4 text-white font-bold hover:text-orange-400">Skills</a>
+        <a href="projects.html" class="text-lg ml-4 text-white font-bold hover:text-orange-400">Projects</a>
+        <a href="contact.html" class="text-lg ml-4 text-white font-bold hover:text-orange-400">Contact</a>
+    </div>
+    <div class="container w-full mx-auto p-2 lg:p-4 md:flex lg:flex">
+        <div class="about m-2 sm:m-1 mx-auto w-full" id="about">
+            <div>
+                <img src="aboutboy.webp" id="aboy" class="h-screen float-right">
+            </div>
+            <div>
+                <p class="lg:text-8xl text-6xl">
+                    I'm Shubham Lendave
+                </p>
+            </div>
+            <p
+                class=" text-white text-lg bg-orange-600 border-b-white border-b-8 p-1 lg:pl-5 lg:mt-8 rounded-t-lg lg:rounded-tr-full">
+                Hello! I'm Shubham Lendave, a passionate TYBSc Computer Science student with a keen interest in design
+                and frontend
+                development. Although I am currently a student and have yet to gain professional experience, my
+                enthusiasm for creating
+                visually appealing and user-friendly interfaces drives me to explore the world of frontend technologies.
+            </p>
+            <a href="resume.pdf" download="resume.pdf"> <button type="submit"
+                    class="bg-white p-1 text-lg hover:bg-gray-400 border-2 border-black hover:text-black text-gray-800 rounded-lg mt-2 w-fit">Download
+                    Resume</button></a>
+
+        </div>
+    </div>
+</body>
+
+</html>

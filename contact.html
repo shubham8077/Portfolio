@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="tailwind.js"></script>
+    <style>
+        #contact {
+            font-size: 5vw;
+            background-image: url('wl.webp');
+            display: flex;
+            font-weight: bold;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: mv 5s alternate infinite;
+        }
+
+        @keyframes mv {
+            0% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 100% 0%;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url('mybg.webp'); background-size: cover;">
+    <div class="nav w-fit mx-auto bg-zinc-800 rounded-full p-2">
+        <a href="index.html" class="text-lg text-white font-bold hover:text-orange-400">About</a>
+        <a href="skills.html" class="text-lg ml-4 text-white font-bold hover:text-orange-400">Skills</a>
+        <a href="projects.html" class="text-lg ml-4 text-white font-bold hover:text-orange-400">Projects</a>
+        <a href="contact.html" class="text-lg ml-4 text-white font-bold hover:text-orange-400">Contact</a>
+    </div>
+    <div class="container lg:flex w-full mx-auto">
+        <div>
+            <img src="contact.webp" id="aboy" class="h-screen w-full mt-1 transform scale-x-[-1]">
+        </div>
+        <div class="ml-2">
+
+            <div id="contact">
+                <!-- <div> -->
+                <p class="lg:text-8xl text-6xl w-full lg:text-left sm:text-center md:text-center">
+                    CONTACT
+                </p>
+                <!-- </div> -->
+            </div>
+
+            <br>
+            <div class="lg:flex w-full p-4">
+
+                <div class="w-full bg-orange-600 p-2 rounded-lg">
+                    <form action="contact.html" method="post">
+                        <label class=" text-white text-lg font-extrabold">
+                            Contact Us
+                        </label>
+                        <br>
+                        <hr>
+                        <label class=" text-white ">
+                            Name:
+                        </label>
+                        <br>
+                        <input type="text" class="rounded-lg text-black p-1">
+                        <br>
+                        <label class=" text-white ">
+                            Email:
+                        </label>
+                        <br>
+                        <input type="email" class="rounded-lg text-black p-1">
+                        <br>
+                        <label class=" text-white ">
+                            Message:
+                        </label>
+                        <br>
+                        <input type="text" class="rounded-lg text-black p-1">
+                        <br>
+
+                        <button type="submit"
+                            class="bg-white p-1 font-bold text-lg hover:bg-gray-400 border-2 border-black hover:text-black text-gray-800 rounded-lg mt-2 w-full">Submit</button>
+
+                    </form>
+                </div>
+
+                <div class=" w-full bg-orange-600 text-wrap p-2 rounded-lg lg:ml-4 my-2">
+                    <p class="text-white text-lg ml-2 font-extrabold">Info</p>
+                    <hr>
+                    <p
+                        class="text-white sm:text-sm text-md bg-orange-600 border-l-white border-l-8 p-1 lg:pl-5 my-4 ml-2 font-semibold rounded-e-full">
+                        Email:shubhamlendave4112002@gmail.com
+                    </p>
+                    <p
+                        class="text-white sm:text-sm text-md bg-orange-600 border-l-white border-l-8 p-1 lg:pl-5 my-4 ml-2 font-semibold rounded-e-full">
+                        Phone:9309478077
+                    </p>
+                    <p
+                        class="text-white sm:text-sm text-md bg-orange-600 border-l-white border-l-8 p-1 lg:pl-5 my-4 ml-2 font-semibold rounded-e-full">
+                        Instagram_id:shubham_41102
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- </div> -->
+    </div>
+</body>
+
+</html>
